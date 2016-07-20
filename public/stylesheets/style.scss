@@ -1,0 +1,143 @@
+/* -------------------- Sass variables --------------------  */
+$content-align: 50%;
+$solarized-blue: #1b75af;
+$solarized-deep: #002b36;
+$solarized-green: #8f9496;
+$z-background: 0;
+$z-foreground1: 1;
+$z-foreground2: 2;
+$z-top: 3;
+/* --------------- General, container, nav, & footer rules --------------- */
+* { margin: 0px; padding: 0px; }
+#container { font-size: 85%; overflow: hidden; }
+.oneline { white-space: nowrap; }
+.page { background: white; height: 100%; width: 100%; position: relative; z-index: $z-foreground2; }
+h2, #nav li { font-family: 'Source Sans Pro', sans-serif; }
+h2 {
+    font-size: 4vw;
+    left: $content-align;
+    position: absolute;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    z-index: $z-foreground2; }
+#nav {
+    background-color: rgba(0,0,0,0.1);
+    display: none;
+    left: 0%;
+    line-height: .2vw;
+    padding: .3vw;
+    position: fixed;
+    width: 100%;
+    z-index: $z-top;
+
+    ul { font-weight: bold; list-style: none; text-align: left; }
+    li { display: inline-block; font-size: 1.4vw; padding: .5vw; }
+    a { color: $solarized-blue; text-decoration: none;
+        &:hover { background-color: rgba(255,255,255,0.6); } } }
+#footer {
+    background-color: rgba(255,255,255,0.5);
+    bottom: -.5vw;
+    font-weight: bold;
+    font-size: .9vw;
+    left: $content-align;
+    position: fixed;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: $z-top; }
+/* --------------- Home page rules (including spacer) --------------- */
+#delay-spacer { height: 15%; }
+@each $spacer in (home-spacer, spacer1, spacer2, spacer3) {
+    ##{$spacer} { z-index: $z-background; } }
+#home {
+    background: url("../images/Me_on_a_rock.jpg") no-repeat fixed center;
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+
+    h1 {
+        font-size: 8vw;
+        left: $content-align;
+        position: absolute;
+        top: 40%;
+        transform: translate(-50%, -50%); }
+
+    ul {
+        left: $content-align;
+        list-style: none;
+        position: absolute;
+        text-align: center;
+        top: 60%;
+        transform: translate(-50%, -50%); }
+
+    li {
+        display: inline-block;
+        font-size: 3vw;
+        margin-left: .5vw;
+        margin-right: .5vw;
+        text-shadow: 0px 0px .05vw white; }
+
+    a { color: $solarized-blue; text-decoration: none; padding: 0.5vw;
+        &:hover { background-color: rgba(255,255,255,0.5); } } }
+/* --------------- About page rules --------------- */
+#about > p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5vw;
+    height: 80%;
+    left: $content-align;
+    position: relative;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+
+    a:link { color: $solarized-blue; }
+    a:visited { color: $solarized-green; } }
+/* --------------- Portfolio rules --------------- */
+#portfolio {
+    background: url("../images/Coding\ Screenshot.png") no-repeat fixed center;
+    background-size: 100% 100%;
+    h2 { color: $solarized-green; text-shadow: 0px 0px 2vw black;top: 10%; }
+
+    div {
+        height: 95%;
+        left: $content-align;
+        max-width: 100%;
+        position: relative;
+        top: 60%;
+        transform: translate(-50%, -50%); }
+
+    #display > img { width: 100%; height: 100%; }
+    #display {
+        display: block;
+        border: 5px solid black;
+        left: $content-align;
+        max-height: 80%;
+        max-width: 80%;
+        overflow: hidden;
+        position: relative;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap; }
+
+    #arrowR {right: 0%;}
+    #arrowL:hover, #arrowR:hover {  opacity: 1; }
+    #arrowL, #arrowR  {
+        height: 25%;
+        margin-left: -.9vw;
+        margin-right: -.9vw;
+        opacity: 0.3;
+        position: absolute;
+        top: 30%; } }
+/* --------------- Pricing page and questionnaire rules --------------- */
+#pricing {
+    display: none;
+    h2 { color: $solarized-deep; top: 10%; }
+    position: fixed;
+    top: 0;
+    z-index: $z-foreground1; }
+#packages { background-color: $solarized-green; left: -100%; position: fixed; }
+#survey {
+    background-color: $solarized-deep;
+    h2 { color: $solarized-green; }
+    left: 100%;
+    position: fixed; }

@@ -1,0 +1,192 @@
+/* -------------------- Sass variables --------------------  */
+/* --------------- General, container, nav, & footer rules --------------- */
+* {
+  margin: 0px;
+  padding: 0px; }
+
+#container {
+  font-size: 85%;
+  overflow: hidden; }
+
+.oneline {
+  white-space: nowrap; }
+
+.page {
+  background: white;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2; }
+
+h2, #nav li {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+h2 {
+  font-size: 4vw;
+  left: 50%;
+  position: absolute;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  z-index: 2; }
+
+#nav {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: none;
+  left: 0%;
+  line-height: .2vw;
+  padding: .3vw;
+  position: fixed;
+  width: 100%;
+  z-index: 3; }
+  #nav ul {
+    font-weight: bold;
+    list-style: none;
+    text-align: left; }
+  #nav li {
+    display: inline-block;
+    font-size: 1.4vw;
+    padding: .5vw; }
+  #nav a {
+    color: #1b75af;
+    text-decoration: none; }
+    #nav a:hover {
+      background-color: rgba(255, 255, 255, 0.6); }
+
+#footer {
+  background-color: rgba(255, 255, 255, 0.5);
+  bottom: -.5vw;
+  font-weight: bold;
+  font-size: .9vw;
+  left: 50%;
+  position: fixed;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 3; }
+
+/* --------------- Home page rules (including spacer) --------------- */
+#delay-spacer {
+  height: 15%; }
+
+#home-spacer {
+  z-index: 0; }
+
+#spacer1 {
+  z-index: 0; }
+
+#spacer2 {
+  z-index: 0; }
+
+#spacer3 {
+  z-index: 0; }
+
+#home {
+  background: url("../images/Me_on_a_rock.jpg") no-repeat fixed center;
+  background-size: 100%;
+  position: fixed;
+  top: 0; }
+  #home h1 {
+    font-size: 8vw;
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%); }
+  #home ul {
+    left: 50%;
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    transform: translate(-50%, -50%); }
+  #home li {
+    display: inline-block;
+    font-size: 3vw;
+    margin-left: .5vw;
+    margin-right: .5vw;
+    text-shadow: 0px 0px .05vw white; }
+  #home a {
+    color: #1b75af;
+    text-decoration: none;
+    padding: 0.5vw; }
+    #home a:hover {
+      background-color: rgba(255, 255, 255, 0.5); }
+
+/* --------------- About page rules --------------- */
+#about > p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5vw;
+  height: 80%;
+  left: 50%;
+  position: relative;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  width: 60%; }
+  #about > p a:link {
+    color: #1b75af; }
+  #about > p a:visited {
+    color: #7f9496; }
+
+/* --------------- Portfolio rules --------------- */
+#portfolio {
+  background: url("../images/Coding Screenshot.png") no-repeat fixed center;
+  background-size: 100% 100%; }
+  #portfolio h2 {
+    color: #7f9496;
+    text-shadow: 0px 0px 2vw black;
+    top: 10%; }
+  #portfolio div {
+    height: 95%;
+    left: 50%;
+    max-width: 100%;
+    position: relative;
+    top: 60%;
+    transform: translate(-50%, -50%); }
+  #portfolio #display > img {
+    width: 100%;
+    height: 100%; }
+  #portfolio #display {
+    display: block;
+    border: 5px solid black;
+    left: 50%;
+    max-height: 80%;
+    max-width: 80%;
+    overflow: hidden;
+    position: relative;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; }
+  #portfolio #arrowR {
+    right: 0%; }
+  #portfolio #arrowL:hover, #portfolio #arrowR:hover {
+    opacity: 1; }
+  #portfolio #arrowL, #portfolio #arrowR {
+    height: 25%;
+    margin-left: -.9vw;
+    margin-right: -.9vw;
+    opacity: 0.3;
+    position: absolute;
+    top: 30%; }
+
+/* --------------- Pricing page and questionnaire rules --------------- */
+#pricing {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 1; }
+  #pricing h2 {
+    color: #002b36;
+    top: 10%; }
+
+#packages {
+  background-color: #7f9496;
+  left: -100%;
+  position: fixed; }
+
+#survey {
+  background-color: #002b36;
+  left: 100%;
+  position: fixed; }
+  #survey h2 {
+    color: #7f9496; }
+
+/*# sourceMappingURL=style.css.map */

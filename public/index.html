@@ -1,0 +1,106 @@
+<html>
+<head>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'
+            type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600'
+            rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- <div id='message'></div> -->
+        <!-- Nav: initially hidden, but fades in when "home nav" is obscured -->
+        <div id="nav">
+            <ul>
+                <li class="about"><a href="#about">About</a></li>
+                <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
+                <li class="pricing"><a href="#spacer1">Get Started</a></li>
+            </ul>
+        </div>
+
+        <!-- Home: landing page with title and "home nav" -->
+        <div id="home" class="page">
+            <h1 class='oneline'>All by Alex</h1>
+            <ul class='oneline' id="home-nav">
+                <li class='oneline'><a href="#about">About</a></li>
+                <li class='oneline'><a href="#portfolio">Portfolio</a></li>
+                <li class='oneline pricing '><a href="#spacer1">Get Started</a></li>
+            </ul>
+        </div>
+
+        <!-- Spacer so the landing page doesn't overlap with "about" -->
+        <div id="home-spacer" class="page"></div>
+
+        <!-- About: information about me and my services -->
+        <div id="about" class="page">
+            <h2 class='oneline'>&nbsp &nbsp &nbsp &nbsp
+                About me and <br> what I can do for you</h2>
+            <p>I'm a student of software engineering with
+            primary interests in machine learning, distributed systems, and
+            brain-machine interfacing. My passions for creating useful solutions
+            from code and contributing to a world where everyone's needs can be
+            meet have lead me here. In addition to my professional interests, I
+            also love hiking, sailing, theatre, dogs, basketball, listening to
+            and making music, math, science (especially physics), video gaming,
+            and philosophizing.<br><br>
+            Take a look at my portfolio to see some
+            examples of both my previous work and the side projects I've
+            enjoyed. For clients with simpler web development needs, I offer
+            several <a href="#spacer2">fixed-price packages</a>. These are most
+            apt for those of you who require construction of a content-based
+            or a standard e-commerce site. Clients that have more specific
+            development needs or custom web solutions are recommended to
+            complete the client <a href="#spacer3"> questionnaire</a>. The
+            questionnaire is an informal starting point for our
+            client-contractor relationship. It helps me to both understand your
+            needs and improve my services, as well as provide you with the
+            means to communicate to me your initial plans/concerns for your
+            project. A custom price quote estimate will be generated using the
+            information gathered from the questionnaire, but more accurate
+            pricing can only be determined after discussing your project
+            with you personally.</p>
+        </div>
+
+        <!-- Portfolio: a "circular scrolling" display of my work -->
+        <div id='portfolio' class='page'>
+            <h2 class='oneline'>Take a look at some of my work</h2>
+            <div>
+                <img class='arrow' id="arrowL" src="images/arrow-left.png">
+                <span id="display">
+                    <img src='images/samples/dickbutt.png'>
+                    <img src='images/samples/shitty_charmander.jpg'>
+                </span>
+                <img class='arrow' id="arrowR" src="images/arrow-right.png">
+            </div>
+        </div>
+
+        <!-- pricing: synopsis of my pricing and client questionnaire -->
+        <div id="pricing" class="page">
+            <h2 class='oneline'>Where to begin</h2>
+            <div id="packages" class="page">
+                <h2>Fixed-price packages</h2>
+                <p></p>
+            </div>
+            <div id="survey" class="page">
+                <h2>Client questionnaire</h2>
+            </div>
+        </div>
+
+        <!-- These three spacers allow the final pages to be viewable -->
+        <div id="delay-spacer"></div>
+        <div id="spacer1" class="page"></div>
+        <div id="spacer2" class="page"></div>
+        <div id="spacer3" class="page"></div>
+
+        <!-- Footer: contact info - fades out on scroll and in on scroll stop-->
+        <div id="footer">
+            <address>Want to get in touch? Contact me by
+                <a href="mailto:alex.richards006@gmail.com">email</a> or by phone at
+                <a href="tel:+15714396289">phone</a>
+            </address>
+        </div>
+    </div>
+</body>
+</html>
